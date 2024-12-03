@@ -1,12 +1,13 @@
-import { NavLink, Outlet } from "react-router"
+import { Outlet } from "react-router"
+import { Header } from "../Header/Header";
 
 const PageLayout = () => {
     return (
         <>
-            <div> PageLayout </div>
-            <NavLink to="/favorites">Favorites</NavLink>
-            <NavLink to="/details/42/">Picture 42</NavLink>
-            <Outlet />
+            <Header />
+            <main>
+                <Outlet />
+            </main>
         </>
     )
 }
